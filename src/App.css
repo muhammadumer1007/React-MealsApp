@@ -1,0 +1,286 @@
+/* HEADER START */
+.header {
+  width: 95%;
+  margin-left: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 9px !important;
+}
+
+.logo h4 {
+  color: palevioletred;
+  cursor: pointer;
+}
+
+.btnPink {
+  padding: 5px 7px;
+  color: palevioletred;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 2px solid palevioletred;
+  outline: none;
+}
+
+.btnPink:hover {
+  background-color: palevioletred;
+  color: #fff;
+}
+
+
+@media (max-width: 576px) {
+  .header {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .btnPink {
+    font-size: 14px;
+    padding: 3px 5px;
+  }
+
+  .btnRandom {
+    margin-top: 5px;
+  }
+}
+
+/* HEADER END */
+
+/*  FAVOURITES START */
+
+.Favourites h1 {
+  color: palevioletred;
+}
+
+.FavouriteItemsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.FavouriteItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: palevioletred;
+}
+
+@media (max-width: 576px) {
+  .FavouriteItems {
+    margin: 0 auto;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+
+.FavouriteItems h6 {
+  width: 100px;
+  text-align: center;
+}
+
+.btnHeart {
+  cursor: pointer;
+  background-color: palevioletred;
+  color: white;
+}
+
+/*  FAVOURITES END */
+
+
+/* CARD START */
+#Card {
+  height: 510px !important;
+}
+
+#Card-title {
+  height: 150px !important;
+}
+
+/* CARD END */
+
+/* ALERT START */
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  min-width: 250px;
+  /* Set a default minimum width */
+  margin-left: -125px;
+  /* Divide value of min-width by 2 */
+  background-color: palevioletred;
+  /* Black background color */
+  color: #fff;
+  /* White text color */
+  text-align: center;
+  /* Centered text */
+  border-radius: 2px;
+  /* Rounded borders */
+  padding: 16px;
+  /* Padding */
+  position: fixed;
+  /* Sit on top of the screen */
+  z-index: 1;
+  /* Add a z-index if needed */
+  left: 50%;
+  /* Center the snackbar */
+  bottom: 30px;
+  /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible;
+  /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+/* ALERT END*/
+
+/* PAGINATION START */
+
+.containerClassName {
+  margin-top: 30px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  .containerClassName {
+    font-size: 14px;
+    margin-right: 12px !important;
+    margin-top: 10px;
+  }
+
+  .pageLinkClassName {
+    padding: 0;
+    /* margin: 0; */
+  }
+
+  .previousLinkClassName,
+  .nextLinkClassName {
+    /* margin: 0; */
+    padding: 0;
+  }
+
+}
+
+.containerClassName li {
+  list-style: none;
+}
+
+.pageLinkClassName {
+  background-color: #fff;
+  color: palevioletred;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin: 0 3px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.activeLinkClassName {
+  background-color: palevioletred;
+  color: #fff;
+}
+
+.pageLinkClassName:hover,
+.previousLinkClassName:hover,
+.nextLinkClassName:hover {
+  background-color: palevioletred;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.previousLinkClassName,
+.nextLinkClassName {
+  background-color: #fff;
+  color: palevioletred;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 3px 10px 5px 10px;
+  border-radius: 3px;
+}
+
+.disabledLinkClassName {
+  visibility: hidden;
+}
+
+/* PAGINATION END*/
+
+
+/* SPINNER START */
+
+.SpinnerPink {
+  color: palevioletred !important;
+}
+
+/* SPINNER END */
+
+/* meals not found */
+.AllMeals {
+  color: palevioletred;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.footer {
+  color: palevioletred;
+  text-align: center;
+  margin-top: 20px;
+}
